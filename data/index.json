@@ -2,7 +2,7 @@
   "index": "Hugging-Face-Releases-Index",
   "hf_user": "danielrosehill",
   "snapshot": "2026-10-15",
-  "counts_at_snapshot": {"models": 17, "datasets": 72, "spaces": 56, "blogs": 2},
+  "counts_at_snapshot": {"models": 17, "datasets": 73, "spaces": 57, "blogs": 2},
   "schema_note": "HF ids are '<owner>/<name>'. kind is implied by the key (models/datasets/spaces). repos are public GitHub repos only. Private repos are never linked. 'inferred' marks a link the HF card does not state outright.",
   "related_indexes": [
     {"title": "Subindices (index of indexes)", "repo": "danielrosehill/Subindices"},
@@ -28,6 +28,14 @@
           "datasets": ["danielrosehill/Read-Aloud-Voice-Sentences", "danielrosehill/English-Hebrew-Codeswitching-Sentences"],
           "spaces": ["danielrosehill/English-Hebrew-Codeswitching-Parakeet-Demo", "danielrosehill/English-Hebrew-Codeswitching-Browser"],
           "repos": ["danielrosehill/English-Hebrew-Codeswitching-Parakeet-Finetune", "danielrosehill/ASR-Training-Data-Collector"]
+        },
+        {
+          "title": "English-Hebrew code-switching ASR benchmark",
+          "summary": "Frozen test set (v1, 145 clips) and leaderboard for ASR on English speech with Hebrew words. Headline metric is Hebrew term recall on an 84-clip clean subset that overlaps no published training set.",
+          "status": "released",
+          "datasets": ["danielrosehill/English-Hebrew-Codeswitching-ASR-Benchmark"],
+          "spaces": ["danielrosehill/English-Hebrew-Codeswitching-ASR-Leaderboard"],
+          "repos": ["danielrosehill/English-Hebrew-Codeswitching-ASR-Benchmark"]
         },
         {
           "title": "Hebrew-in-Latin token classifier",
