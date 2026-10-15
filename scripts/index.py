@@ -93,7 +93,7 @@ def build():
         if notes:
             out += [""] + notes
     out += ["", "## Related indexes", ""]
-    out += [f"- [{s['title']}]({URL['repos'](s['repo'])})" for s in d["subindexes"]]
+    out += [f"- [{s['title']}]({URL['repos'](s['repo'])})" for s in d["related_indexes"]]
     out += [
         "",
         "---",

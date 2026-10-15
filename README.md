@@ -203,6 +203,9 @@ Spaces that do not belong to any theme above.
 
 ## Related indexes
 
+- [Subindices (index of indexes)](https://github.com/danielrosehill/Subindices)
+- [AI Projects Index](https://github.com/danielrosehill/AI-Projects-Index)
+- [Data Projects Index](https://github.com/danielrosehill/Data-Projects-Index)
 - [English-Hebrew Code-Switching Index](https://github.com/danielrosehill/English-Hebrew-Code-Switching-Index)
 - [Speech Tech Index](https://github.com/danielrosehill/Speech-Tech-Index)
 - [Speech and ASR Evaluations](https://github.com/danielrosehill/Speech-And-ASR-Evaluations)

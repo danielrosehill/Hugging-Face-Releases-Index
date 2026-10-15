@@ -29,6 +29,16 @@ Stdlib only, no venv needed. `check` shells out to `gh` for repo visibility.
 - **Listing trap.** The unsorted `api/models?author=…&full=true` listing has silently dropped brand-new repos. `scripts/index.py` sorts by `lastModified`, which returned them.
 - HF collections (`/api/collections?owner=danielrosehill`) are mostly bookmarks of *other people's* models. Only "My Models - Classifiers", "My Whisper Fine-Tunes (V2)", "My Whisper ACFT Fine Tunes", "My LORAS", "My Public Audio Datasets" and the code-switching collection are Daniel's own releases. They are useful cross-checks but are not indexed.
 
+## Linked from
+
+These public indexes link here. If you rename this repo, update all of them:
+
+- `Subindices`: an H3 block in the README. Then run `scripts/build-indices-json.py` there. `Index` pulls the list from Subindices.
+- `AI-Projects-Index`: the "Related AI Project Indices" list.
+- `Data-Projects-Index`: the "Hugging Face Releases" section.
+- `Speech-Tech-Index`: end of the "ASR Fine-Tuning" section.
+- `English-Hebrew-Code-Switching-Index`: the "Related indexes" table.
+
 ## Related
 
 - `English-Hebrew-Code-Switching-Index` is a deeper sub-index of the first theme. Keep the two consistent when code-switching releases change.

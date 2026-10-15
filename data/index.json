@@ -4,7 +4,10 @@
   "snapshot": "2026-10-15",
   "counts_at_snapshot": {"models": 17, "datasets": 72, "spaces": 56, "blogs": 2},
   "schema_note": "HF ids are '<owner>/<name>'. kind is implied by the key (models/datasets/spaces). repos are public GitHub repos only. Private repos are never linked. 'inferred' marks a link the HF card does not state outright.",
-  "subindexes": [
+  "related_indexes": [
+    {"title": "Subindices (index of indexes)", "repo": "danielrosehill/Subindices"},
+    {"title": "AI Projects Index", "repo": "danielrosehill/AI-Projects-Index"},
+    {"title": "Data Projects Index", "repo": "danielrosehill/Data-Projects-Index"},
     {"title": "English-Hebrew Code-Switching Index", "repo": "danielrosehill/English-Hebrew-Code-Switching-Index"},
     {"title": "Speech Tech Index", "repo": "danielrosehill/Speech-Tech-Index"},
     {"title": "Speech and ASR Evaluations", "repo": "danielrosehill/Speech-And-ASR-Evaluations"}
