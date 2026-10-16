@@ -21,10 +21,10 @@
       "projects": [
         {
           "title": "Parakeet TDT 0.6B v2 code-switching fine-tune",
-          "summary": "Parakeet v2 fine-tuned on one speaker reading English sentences with Hebrew words. Ships NeMo and GGUF weights.",
+          "summary": "Parakeet v2 fine-tuned on one speaker reading English sentences with Hebrew words. Ships the NeMo original plus per-format repos: GGUF (Handy, Android), ONNX (onnx-asr, Voxtype) and sherpa-onnx int8.",
           "status": "released",
           "base_model": "nvidia/parakeet-tdt-0.6b-v2",
-          "models": ["danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching"],
+          "models": ["danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching", "danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching-GGUF", "danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching-ONNX", "danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching-sherpa-onnx-int8"],
           "datasets": ["danielrosehill/Read-Aloud-Voice-Sentences", "danielrosehill/English-Hebrew-Codeswitching-Sentences"],
           "spaces": ["danielrosehill/English-Hebrew-Codeswitching-Parakeet-Demo", "danielrosehill/English-Hebrew-Codeswitching-Browser"],
           "repos": ["danielrosehill/English-Hebrew-Codeswitching-Parakeet-Finetune", "danielrosehill/ASR-Training-Data-Collector"]
