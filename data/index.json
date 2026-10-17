@@ -219,6 +219,12 @@
           "repos": ["danielrosehill/STT-Voice-Note-Evaluation"]
         },
         {
+          "title": "Annotated voice notes",
+          "summary": "A deliberately small set of real voice notes, each with a raw AssemblyAI transcript and a note on why it was included (task extraction, disfluency, long-form).",
+          "status": "active",
+          "datasets": ["danielrosehill/Annotated-Voice-Notes"]
+        },
+        {
           "title": "Speaking pace and background noise",
           "summary": "How speaking rate (WPM) and background noise affect Whisper accuracy.",
           "status": "complete",
