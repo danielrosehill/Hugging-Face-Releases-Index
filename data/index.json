@@ -24,18 +24,18 @@
           "summary": "Parakeet v2 fine-tuned on one speaker reading English sentences with Hebrew words. Ships the NeMo original plus per-format repos: GGUF (Handy, Android), ONNX (onnx-asr, Voxtype) and sherpa-onnx int8.",
           "status": "released",
           "base_model": "nvidia/parakeet-tdt-0.6b-v2",
-          "models": ["danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching", "danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching-GGUF", "danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching-ONNX", "danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching-sherpa-onnx-int8"],
+          "models": ["danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching", "Hebrish/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching-GGUF", "Hebrish/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching-ONNX", "Hebrish/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching-sherpa-onnx-int8"],
           "datasets": ["danielrosehill/Read-Aloud-Voice-Sentences", "danielrosehill/English-Hebrew-Codeswitching-Sentences"],
-          "spaces": ["danielrosehill/English-Hebrew-Codeswitching-Parakeet-Demo", "danielrosehill/English-Hebrew-Codeswitching-Browser"],
-          "repos": ["danielrosehill/English-Hebrew-Codeswitching-Parakeet-Finetune", "danielrosehill/ASR-Training-Data-Collector"]
+          "spaces": ["danielrosehill/English-Hebrew-Codeswitching-Parakeet-Demo", "Hebrish/English-Hebrew-Codeswitching-Browser"],
+          "repos": ["Hebrish-ASR/English-Hebrew-Codeswitching-Parakeet-Finetune", "danielrosehill/ASR-Training-Data-Collector"]
         },
         {
           "title": "English-Hebrew code-switching ASR benchmark",
           "summary": "Frozen test set (v1, 145 clips) and leaderboard for ASR on English speech with Hebrew words. Headline metric is Hebrew term recall on an 84-clip clean subset that overlaps no published training set.",
           "status": "released",
-          "datasets": ["danielrosehill/English-Hebrew-Codeswitching-ASR-Benchmark"],
+          "datasets": ["Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark"],
           "spaces": ["danielrosehill/English-Hebrew-Codeswitching-ASR-Leaderboard"],
-          "repos": ["danielrosehill/English-Hebrew-Codeswitching-ASR-Benchmark"]
+          "repos": ["Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark"]
         },
         {
           "title": "Hebrew-in-Latin token classifier",
@@ -43,9 +43,9 @@
           "status": "released",
           "base_model": "FacebookAI/xlm-roberta-base",
           "models": ["danielrosehill/hebrew-latin-token-classifier"],
-          "datasets": ["danielrosehill/hebrew-latin-code-switching"],
-          "spaces": ["danielrosehill/hebrew-latin-token-classifier", "danielrosehill/hebrew-latin-span-review"],
-          "repos": ["danielrosehill/Hebrew-Latin-Token-Classifier"]
+          "datasets": ["Hebrish/hebrew-latin-code-switching"],
+          "spaces": ["danielrosehill/hebrew-latin-token-classifier", "Hebrish/hebrew-latin-span-review"],
+          "repos": ["Hebrish-ASR/Hebrew-Latin-Token-Classifier"]
         },
         {
           "title": "Whisper-Hebrish",
@@ -53,7 +53,7 @@
           "status": "superseded",
           "base_model": "openai/whisper-large-v3-turbo",
           "models": ["danielrosehill/Whisper-Hebrish"],
-          "datasets": ["danielrosehill/English-Hebrew-Mixed-Sentences"],
+          "datasets": ["Hebrish/English-Hebrew-Mixed-Sentences"],
           "spaces": ["danielrosehill/Whisper-Hebrish"],
           "repos": ["danielrosehill/Whisper-Fine-Tune-Accuracy-Eval"]
         }
