@@ -91,7 +91,7 @@
             "danielrosehill/daniel_whisper_acft_base_v2",
             "danielrosehill/daniel_whisper_acft_small_v2"
           ],
-          "repos": ["danielrosehill/whisper-acft", "danielrosehill/Modal-ACFT-Finetune-Script"]
+          "repos": ["futo-org/whisper-acft", "danielrosehill/Modal-ACFT-Finetune-Script"]
         },
         {
           "title": "Fine-tune evaluations",
