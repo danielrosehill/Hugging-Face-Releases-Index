@@ -2,38 +2,15 @@
   "index": "Hugging-Face-Releases-Index",
   "hf_user": "danielrosehill",
   "snapshot": "2026-10-15",
-  "counts_at_snapshot": {
-    "models": 17,
-    "datasets": 73,
-    "spaces": 57,
-    "blogs": 2
-  },
+  "counts_at_snapshot": {"models": 17, "datasets": 73, "spaces": 57, "blogs": 2},
   "schema_note": "HF ids are '<owner>/<name>'. kind is implied by the key (models/datasets/spaces). repos are public GitHub repos only. Private repos are never linked. 'inferred' marks a link the HF card does not state outright.",
   "related_indexes": [
-    {
-      "title": "Subindices (index of indexes)",
-      "repo": "danielrosehill/Subindices"
-    },
-    {
-      "title": "AI Projects Index",
-      "repo": "danielrosehill/AI-Projects-Index"
-    },
-    {
-      "title": "Data Projects Index",
-      "repo": "danielrosehill/Data-Projects-Index"
-    },
-    {
-      "title": "English-Hebrew Code-Switching Index",
-      "repo": "danielrosehill/English-Hebrew-Code-Switching-Index"
-    },
-    {
-      "title": "Speech Tech Index",
-      "repo": "danielrosehill/Speech-Tech-Index"
-    },
-    {
-      "title": "Speech and ASR Evaluations",
-      "repo": "danielrosehill/Speech-And-ASR-Evaluations"
-    }
+    {"title": "Subindices (index of indexes)", "repo": "danielrosehill/Subindices"},
+    {"title": "AI Projects Index", "repo": "danielrosehill/AI-Projects-Index"},
+    {"title": "Data Projects Index", "repo": "danielrosehill/Data-Projects-Index"},
+    {"title": "English-Hebrew Code-Switching Index", "repo": "danielrosehill/English-Hebrew-Code-Switching-Index"},
+    {"title": "Speech Tech Index", "repo": "danielrosehill/Speech-Tech-Index"},
+    {"title": "Speech and ASR Evaluations", "repo": "danielrosehill/Speech-And-ASR-Evaluations"}
   ],
   "themes": [
     {
@@ -47,75 +24,38 @@
           "summary": "Parakeet v2 fine-tuned on one speaker reading English sentences with Hebrew words. Ships the NeMo original plus per-format repos: GGUF (Handy, Android), ONNX (onnx-asr, Voxtype) and sherpa-onnx int8.",
           "status": "released",
           "base_model": "nvidia/parakeet-tdt-0.6b-v2",
-          "models": [
-            "danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching",
-            "Hebrish/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching-GGUF",
-            "Hebrish/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching-ONNX",
-            "Hebrish/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching-sherpa-onnx-int8"
-          ],
-          "datasets": [
-            "danielrosehill/Read-Aloud-Voice-Sentences",
-            "danielrosehill/English-Hebrew-Codeswitching-Sentences"
-          ],
-          "spaces": [
-            "danielrosehill/English-Hebrew-Codeswitching-Parakeet-Demo",
-            "Hebrish/English-Hebrew-Codeswitching-Browser"
-          ],
-          "repos": [
-            "Hebrish-ASR/English-Hebrew-Codeswitching-Parakeet-Finetune",
-            "danielrosehill/ASR-Training-Data-Collector"
-          ]
+          "models": ["danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching", "Hebrish/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching-GGUF", "Hebrish/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching-ONNX", "Hebrish/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching-sherpa-onnx-int8"],
+          "datasets": ["danielrosehill/Read-Aloud-Voice-Sentences", "danielrosehill/English-Hebrew-Codeswitching-Sentences"],
+          "spaces": ["danielrosehill/English-Hebrew-Codeswitching-Parakeet-Demo", "Hebrish/English-Hebrew-Codeswitching-Browser"],
+          "repos": ["Hebrish-ASR/English-Hebrew-Codeswitching-Parakeet-Finetune", "danielrosehill/ASR-Training-Data-Collector"]
         },
         {
           "title": "English-Hebrew code-switching ASR benchmark",
           "summary": "Frozen test set (v1, 145 clips) and leaderboard for ASR on English speech with Hebrew words. Headline metric is Hebrew term recall on an 84-clip clean subset that overlaps no published training set.",
           "status": "released",
-          "datasets": [
-            "Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark"
-          ],
-          "spaces": [
-            "danielrosehill/English-Hebrew-Codeswitching-ASR-Leaderboard"
-          ],
-          "repos": [
-            "Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark"
-          ]
+          "datasets": ["Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark"],
+          "spaces": ["danielrosehill/English-Hebrew-Codeswitching-ASR-Leaderboard"],
+          "repos": ["Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark"]
         },
         {
           "title": "Hebrew-in-Latin token classifier",
           "summary": "XLM-R token classifier that finds romanized Hebrew words inside English text. Span F1 0.941 on a term-disjoint test split.",
           "status": "released",
           "base_model": "FacebookAI/xlm-roberta-base",
-          "models": [
-            "danielrosehill/hebrew-latin-token-classifier"
-          ],
-          "datasets": [
-            "Hebrish/hebrew-latin-code-switching"
-          ],
-          "spaces": [
-            "danielrosehill/hebrew-latin-token-classifier",
-            "Hebrish/hebrew-latin-span-review"
-          ],
-          "repos": [
-            "Hebrish-ASR/Hebrew-Latin-Token-Classifier"
-          ]
+          "models": ["danielrosehill/hebrew-latin-token-classifier"],
+          "datasets": ["Hebrish/hebrew-latin-code-switching"],
+          "spaces": ["danielrosehill/hebrew-latin-token-classifier", "Hebrish/hebrew-latin-span-review"],
+          "repos": ["Hebrish-ASR/Hebrew-Latin-Token-Classifier"]
         },
         {
           "title": "Whisper-Hebrish",
           "summary": "The first code-switching fine-tune: Whisper large-v3-turbo on English sentences with Hebrew words. Its dataset is superseded and has substring-matched labels (114 of 474 wrong).",
           "status": "superseded",
           "base_model": "openai/whisper-large-v3-turbo",
-          "models": [
-            "danielrosehill/Whisper-Hebrish"
-          ],
-          "datasets": [
-            "Hebrish/English-Hebrew-Mixed-Sentences"
-          ],
-          "spaces": [
-            "danielrosehill/Whisper-Hebrish"
-          ],
-          "repos": [
-            "danielrosehill/Whisper-Fine-Tune-Accuracy-Eval"
-          ]
+          "models": ["danielrosehill/Whisper-Hebrish"],
+          "datasets": ["Hebrish/English-Hebrew-Mixed-Sentences"],
+          "spaces": ["danielrosehill/Whisper-Hebrish"],
+          "repos": ["danielrosehill/Whisper-Fine-Tune-Accuracy-Eval"]
         }
       ]
     },
@@ -136,18 +76,10 @@
             "danielrosehill/daniel_whisper_finetune_medium_v2",
             "danielrosehill/daniel_whisper_finetune_large_v3_turbo_v2"
           ],
-          "datasets": [
-            "danielrosehill/Tech-Sentences-For-ASR-Training"
-          ],
+          "datasets": ["danielrosehill/Tech-Sentences-For-ASR-Training"],
           "datasets_inferred": true,
-          "spaces": [
-            "danielrosehill/Whisper-Fine-Tune-Eval"
-          ],
-          "repos": [
-            "danielrosehill/Modal-Whisper-Finetune-Script",
-            "danielrosehill/Whisper-Fine-Tune-Accuracy-Eval",
-            "danielrosehill/STT-Fine-Tune-Project-Outline"
-          ],
+          "spaces": ["danielrosehill/Whisper-Fine-Tune-Eval"],
+          "repos": ["danielrosehill/Modal-Whisper-Finetune-Script", "danielrosehill/Whisper-Fine-Tune-Accuracy-Eval", "danielrosehill/STT-Fine-Tune-Project-Outline"],
           "notes": "The model cards say 'unknown dataset'. The TechVoice dataset matches the described training data but is not confirmed as the source."
         },
         {
@@ -159,33 +91,21 @@
             "danielrosehill/daniel_whisper_acft_base_v2",
             "danielrosehill/daniel_whisper_acft_small_v2"
           ],
-          "repos": [
-            "futo-org/whisper-acft",
-            "danielrosehill/Modal-ACFT-Finetune-Script"
-          ]
+          "repos": ["futo-org/whisper-acft", "danielrosehill/Modal-ACFT-Finetune-Script"]
         },
         {
           "title": "Fine-tune evaluations",
           "summary": "Whether the local fine-tunes beat stock Whisper and commercial STT APIs on my voice.",
           "status": "complete",
-          "datasets": [
-            "danielrosehill/Whisper-Fine-Tune-One-Shot-Eval",
-            "danielrosehill/STT-Fine-Tune-Eval-101225"
-          ],
-          "spaces": [
-            "danielrosehill/Whisper-Fine-Tune-Eval"
-          ],
-          "repos": [
-            "danielrosehill/Whisper-Fine-Tune-Accuracy-Eval"
-          ]
+          "datasets": ["danielrosehill/Whisper-Fine-Tune-One-Shot-Eval", "danielrosehill/STT-Fine-Tune-Eval-101225"],
+          "spaces": ["danielrosehill/Whisper-Fine-Tune-Eval"],
+          "repos": ["danielrosehill/Whisper-Fine-Tune-Accuracy-Eval"]
         },
         {
           "title": "Tech Sentences (2026 recording set)",
           "summary": "Dictation-style English sentences dense in software, DevOps and AI vocabulary, read aloud by one speaker. Training data for the next personal fine-tune.",
           "status": "growing",
-          "datasets": [
-            "danielrosehill/Tech-Sentences"
-          ]
+          "datasets": ["danielrosehill/Tech-Sentences"]
         }
       ]
     },
@@ -198,22 +118,15 @@
           "title": "Voice-Note Intent Classifier",
           "summary": "Multi-label intent classifier for voice-note transcripts. It routes each note to the right agent or MCP tool.",
           "status": "released",
-          "models": [
-            "danielrosehill/Voice-Note-Intent-Classifier"
-          ],
+          "models": ["danielrosehill/Voice-Note-Intent-Classifier"],
           "notes": "Training dataset not yet published."
         },
         {
           "title": "Prompt separation",
           "summary": "Voice-typed prompt transcripts split into discrete asks and context chunks. A candidate training set for a prompt/context splitter.",
           "status": "released",
-          "datasets": [
-            "danielrosehill/Prompt-Separation",
-            "danielrosehill/prompt-or-not"
-          ],
-          "spaces": [
-            "danielrosehill/Prompt-And-Output-Separator"
-          ]
+          "datasets": ["danielrosehill/Prompt-Separation", "danielrosehill/prompt-or-not"],
+          "spaces": ["danielrosehill/Prompt-And-Output-Separator"]
         }
       ]
     },
@@ -227,42 +140,28 @@
           "summary": "YOLO11 detector for one street-postering campaign in central Jerusalem, trained on geotagged street photos.",
           "status": "released",
           "base_model": "yolo11",
-          "models": [
-            "danielrosehill/jerusalem-poster-detector"
-          ],
-          "datasets": [
-            "danielrosehill/jerusalem-poster-detection"
-          ]
+          "models": ["danielrosehill/jerusalem-poster-detector"],
+          "datasets": ["danielrosehill/jerusalem-poster-detection"]
         },
         {
           "title": "Whiteboards",
           "summary": "Single-author whiteboard photos for testing handwritten OCR in vision-language models.",
           "status": "released",
-          "datasets": [
-            "danielrosehill/Whiteboards"
-          ],
-          "spaces": [
-            "danielrosehill/Nano-Banana-Sketch-Cleanup"
-          ],
-          "repos": [
-            "danielrosehill/Sample-Whiteboards"
-          ]
+          "datasets": ["danielrosehill/Whiteboards"],
+          "spaces": ["danielrosehill/Nano-Banana-Sketch-Cleanup"],
+          "repos": ["danielrosehill/Sample-Whiteboards"]
         },
         {
           "title": "NVR entity recognition",
           "summary": "Labelled frames from home security cameras (NVR), for entity recognition.",
           "status": "released",
-          "datasets": [
-            "danielrosehill/NVR-Entity-Recognition-Experiment"
-          ]
+          "datasets": ["danielrosehill/NVR-Entity-Recognition-Experiment"]
         },
         {
           "title": "Accidental and low-quality photos",
           "summary": "Accidental and blurry camera-roll shots, for training a filter that finds them.",
           "status": "released",
-          "datasets": [
-            "danielrosehill/accidental-and-low-quality-photos"
-          ]
+          "datasets": ["danielrosehill/accidental-and-low-quality-photos"]
         }
       ]
     },
@@ -276,14 +175,8 @@
           "summary": "LoRAs for realistic streetscapes of West Jerusalem and Tel Aviv street style.",
           "status": "released",
           "base_model": "black-forest-labs/FLUX.1-dev",
-          "models": [
-            "danielrosehill/Jerusalem-Images",
-            "danielrosehill/Tel-Aviv-Street-Style"
-          ],
-          "datasets": [
-            "danielrosehill/Jerusalem-Streetscapes",
-            "danielrosehill/Tel-Aviv-Pics"
-          ],
+          "models": ["danielrosehill/Jerusalem-Images", "danielrosehill/Tel-Aviv-Street-Style"],
+          "datasets": ["danielrosehill/Jerusalem-Streetscapes", "danielrosehill/Tel-Aviv-Pics"],
           "datasets_inferred": true,
           "notes": "The Jerusalem-Images card describes its training set as West Jerusalem streetscapes from summer 2025. The dataset pairing is inferred from that description."
         },
@@ -292,40 +185,22 @@
           "summary": "LoRAs for Corn the sloth and Herman Poppleberry, the My Weird Prompts podcast characters.",
           "status": "released",
           "base_model": "black-forest-labs/FLUX.1-dev",
-          "models": [
-            "danielrosehill/Dinosaur-Sloth",
-            "danielrosehill/Herman-Poppleberry"
-          ],
-          "datasets": [
-            "danielrosehill/Corn-The-Sloth",
-            "danielrosehill/Corn-Training-Set"
-          ],
-          "repos": [
-            "danielrosehill/Corn-The-Sloth-Public",
-            "danielrosehill/3D-Models"
-          ]
+          "models": ["danielrosehill/Dinosaur-Sloth", "danielrosehill/Herman-Poppleberry"],
+          "datasets": ["danielrosehill/Corn-The-Sloth", "danielrosehill/Corn-Training-Set"],
+          "repos": ["danielrosehill/Corn-The-Sloth-Public", "danielrosehill/3D-Models"]
         },
         {
           "title": "Israel photo sets",
           "summary": "Captioned photographs of Israeli cities, high-rise development and Hebrew signage.",
           "status": "released",
-          "datasets": [
-            "danielrosehill/Israel-Photos",
-            "danielrosehill/Jerusalem-High-Rise-Development",
-            "danielrosehill/Hebrew-Language-Signage"
-          ]
+          "datasets": ["danielrosehill/Israel-Photos", "danielrosehill/Jerusalem-High-Rise-Development", "danielrosehill/Hebrew-Language-Signage"]
         },
         {
           "title": "Text-to-image evaluations",
           "summary": "How well text-to-image models render Hebrew, plus a library of test prompts.",
           "status": "complete",
-          "datasets": [
-            "danielrosehill/Hebrew-Image-Eval-111225",
-            "danielrosehill/Text-To-Image-Test-Prompts"
-          ],
-          "repos": [
-            "danielrosehill/Text-To-Image-Test-Prompts"
-          ]
+          "datasets": ["danielrosehill/Hebrew-Image-Eval-111225", "danielrosehill/Text-To-Image-Test-Prompts"],
+          "repos": ["danielrosehill/Text-To-Image-Test-Prompts"]
         }
       ]
     },
@@ -339,89 +214,51 @@
           "title": "Voice-note STT evaluations",
           "summary": "Real voice notes, clean and noisy, used to compare STT services.",
           "status": "complete",
-          "datasets": [
-            "danielrosehill/STT-Voice-Notes-Evals",
-            "danielrosehill/Voice-Note-Audio",
-            "danielrosehill/Noisy-Voice-Notes",
-            "danielrosehill/Small-STT-Eval-Audio-Dataset"
-          ],
-          "spaces": [
-            "danielrosehill/STT-Comparison",
-            "danielrosehill/Local-STT-Eval-One-Sample"
-          ],
-          "repos": [
-            "danielrosehill/STT-Voice-Note-Evaluation"
-          ]
+          "datasets": ["danielrosehill/STT-Voice-Notes-Evals", "danielrosehill/Voice-Note-Audio", "danielrosehill/Noisy-Voice-Notes", "danielrosehill/Small-STT-Eval-Audio-Dataset"],
+          "spaces": ["danielrosehill/STT-Comparison", "danielrosehill/Local-STT-Eval-One-Sample"],
+          "repos": ["danielrosehill/STT-Voice-Note-Evaluation"]
         },
         {
           "title": "Annotated voice notes",
           "summary": "A deliberately small set of real voice notes, each with a raw AssemblyAI transcript and a note on why it was included (task extraction, disfluency, long-form).",
           "status": "active",
-          "datasets": [
-            "danielrosehill/Annotated-Voice-Notes"
-          ]
+          "datasets": ["danielrosehill/Annotated-Voice-Notes"]
         },
         {
           "title": "Speaking pace and background noise",
           "summary": "How speaking rate (WPM) and background noise affect Whisper accuracy.",
           "status": "complete",
-          "datasets": [
-            "danielrosehill/ASR-WPM-And-Background-Noise-Eval"
-          ],
-          "repos": [
-            "danielrosehill/Whisper-WPM-Background-Noise-Eval"
-          ]
+          "datasets": ["danielrosehill/ASR-WPM-And-Background-Noise-Eval"],
+          "repos": ["danielrosehill/Whisper-WPM-Background-Noise-Eval"]
         },
         {
           "title": "Podcast ASR benchmark",
           "summary": "Local and cloud models compared on one podcast episode.",
           "status": "complete",
-          "datasets": [
-            "danielrosehill/Podcast-ASR-Evaluation"
-          ],
-          "spaces": [
-            "danielrosehill/Single-Podcast-ASR-Eval"
-          ]
+          "datasets": ["danielrosehill/Podcast-ASR-Evaluation"],
+          "spaces": ["danielrosehill/Single-Podcast-ASR-Eval"]
         },
         {
           "title": "Local STT on AMD GPU",
           "summary": "13 local STT models benchmarked through Handy on an AMD GPU.",
           "status": "complete",
-          "spaces": [
-            "danielrosehill/Single-Shot-ASR-Eval"
-          ],
-          "repos": [
-            "danielrosehill/Local-ASR-STT-Benchmark"
-          ]
+          "spaces": ["danielrosehill/Single-Shot-ASR-Eval"],
+          "repos": ["danielrosehill/Local-ASR-STT-Benchmark"]
         },
         {
           "title": "Audio understanding",
           "summary": "137 test prompts for audio understanding in multimodal models, plus an eval of MP3 bitrate against transcription accuracy.",
           "status": "complete",
-          "datasets": [
-            "danielrosehill/Audio-Understanding-Test-Set",
-            "danielrosehill/Audio-Understanding-Bitrate-Eval-0426"
-          ],
-          "spaces": [
-            "danielrosehill/Audio-Understanding-Experiment"
-          ],
-          "repos": [
-            "danielrosehill/Audio-Understanding-Bitrate-Eval-0426"
-          ]
+          "datasets": ["danielrosehill/Audio-Understanding-Test-Set", "danielrosehill/Audio-Understanding-Bitrate-Eval-0426"],
+          "spaces": ["danielrosehill/Audio-Understanding-Experiment"],
+          "repos": ["danielrosehill/Audio-Understanding-Bitrate-Eval-0426"]
         },
         {
           "title": "Audio tooling demos",
           "summary": "Baby-noise removal compared by STT output, audio-to-SRT with diarization, Hebrew TTS providers compared, and a browser of Whisper apps.",
           "status": "live",
-          "spaces": [
-            "danielrosehill/Deepnet-Baby-Noise-Scrub",
-            "danielrosehill/Audio-To-Subtitles",
-            "danielrosehill/Hebrew-TTS-Samples",
-            "danielrosehill/Interesting-Whisper-Projects"
-          ],
-          "repos": [
-            "danielrosehill/Awesome-Whisper-Apps"
-          ]
+          "spaces": ["danielrosehill/Deepnet-Baby-Noise-Scrub", "danielrosehill/Audio-To-Subtitles", "danielrosehill/Hebrew-TTS-Samples", "danielrosehill/Interesting-Whisper-Projects"],
+          "repos": ["danielrosehill/Awesome-Whisper-Apps"]
         }
       ]
     },
@@ -434,52 +271,25 @@
           "title": "Transcript cleanup",
           "summary": "A fine-tuning set for STT cleanup models, prompts for reformatting dictated text, and demos.",
           "status": "released",
-          "datasets": [
-            "danielrosehill/Transcription-Cleanup-Trainer",
-            "danielrosehill/Speech-To-Text-System-Prompts-2",
-            "danielrosehill/Text-Transformation-Prompts-300525"
-          ],
-          "spaces": [
-            "danielrosehill/Basic-STT-Transcript-Cleanup",
-            "danielrosehill/Text-Transformation-Model",
-            "danielrosehill/BLUF-Email-Formatter"
-          ],
-          "repos": [
-            "danielrosehill/Text-Cleanup-Fine-Tuning-Set",
-            "danielrosehill/STT-Basic-Cleanup-System-Prompt"
-          ]
+          "datasets": ["danielrosehill/Transcription-Cleanup-Trainer", "danielrosehill/Speech-To-Text-System-Prompts-2", "danielrosehill/Text-Transformation-Prompts-300525"],
+          "spaces": ["danielrosehill/Basic-STT-Transcript-Cleanup", "danielrosehill/Text-Transformation-Model", "danielrosehill/BLUF-Email-Formatter"],
+          "repos": ["danielrosehill/Text-Cleanup-Fine-Tuning-Set", "danielrosehill/STT-Basic-Cleanup-System-Prompt"]
         },
         {
           "title": "Voice context generation",
           "summary": "Narrated voice recordings turned into structured context data for agents.",
           "status": "released",
-          "datasets": [
-            "danielrosehill/Sample-Voice-Context-Data",
-            "danielrosehill/Career-Data-Context-Repo",
-            "danielrosehill/Software-Wish-List-Context-Data"
-          ],
-          "spaces": [
-            "danielrosehill/Context-Cruncher",
-            "danielrosehill/AI-Context-Generation-Interviews"
-          ],
-          "repos": [
-            "danielrosehill/Context-Cruncher"
-          ]
+          "datasets": ["danielrosehill/Sample-Voice-Context-Data", "danielrosehill/Career-Data-Context-Repo", "danielrosehill/Software-Wish-List-Context-Data"],
+          "spaces": ["danielrosehill/Context-Cruncher", "danielrosehill/AI-Context-Generation-Interviews"],
+          "repos": ["danielrosehill/Context-Cruncher"]
         },
         {
           "title": "ASR paragraph breaks",
           "summary": "Hand-annotated paragraph breaks for flat ASR monologue (pool of 959 items), annotated in a Gradio Space, for a small text-in/text-out paragraphing model.",
           "status": "in-progress",
-          "models": [],
-          "datasets": [
-            "danielrosehill/ASR-Paragraph-Breaks"
-          ],
-          "spaces": [
-            "danielrosehill/ASR-Paragraph-Annotator"
-          ],
-          "repos": [
-            "danielrosehill/ASR-Paragraph-Breaks"
-          ]
+          "datasets": ["danielrosehill/ASR-Paragraph-Breaks"],
+          "spaces": ["danielrosehill/ASR-Paragraph-Annotator"],
+          "repos": ["danielrosehill/ASR-Paragraph-Breaks"]
         }
       ]
     },
@@ -492,46 +302,28 @@
           "title": "Jerusalem air quality: weekday vs Shabbat",
           "summary": "Twelve months of 5-minute readings from 12 Jerusalem stations, with Shabbat treated as a natural experiment.",
           "status": "complete",
-          "datasets": [
-            "danielrosehill/Jerusalem-Air-Quality-Shabbat"
-          ],
-          "spaces": [
-            "danielrosehill/Jerusalem-Air-Quality-Shabbat-Findings"
-          ],
-          "blogs": [
-            {
-              "title": "How Shabbat Cleans Jerusalem's Air (For One Day A Week)",
-              "url": "https://huggingface.co/blog/danielrosehill/jerusalem-shabbat-air"
-            }
-          ]
+          "datasets": ["danielrosehill/Jerusalem-Air-Quality-Shabbat"],
+          "spaces": ["danielrosehill/Jerusalem-Air-Quality-Shabbat-Findings"],
+          "blogs": [{"title": "How Shabbat Cleans Jerusalem's Air (For One Day A Week)", "url": "https://huggingface.co/blog/danielrosehill/jerusalem-shabbat-air"}]
         },
         {
           "title": "Israel Open Data Catalogue",
           "summary": "A bilingual snapshot of the entire data.gov.il catalogue.",
           "status": "released",
-          "datasets": [
-            "danielrosehill/Israel-Open-Data-Catalogue"
-          ],
-          "repos": [
-            "danielrosehill/Israel-Open-Data-Catalogue-Translations"
-          ]
+          "datasets": ["danielrosehill/Israel-Open-Data-Catalogue"],
+          "repos": ["danielrosehill/Israel-Open-Data-Catalogue-Translations"]
         },
         {
           "title": "Civil defence",
           "summary": "Home Front Command alerting zones and Jerusalem public shelter locations.",
           "status": "released",
-          "datasets": [
-            "danielrosehill/Israel-Alerting-Zones",
-            "danielrosehill/Jerusalem-Emergency-Shelters-0925"
-          ]
+          "datasets": ["danielrosehill/Israel-Alerting-Zones", "danielrosehill/Jerusalem-Emergency-Shelters-0925"]
         },
         {
           "title": "Ivory computer parts catalogue",
           "summary": "A February 2026 price snapshot from Ivory.co.il, an Israeli electronics retailer.",
           "status": "snapshot",
-          "datasets": [
-            "danielrosehill/Ivory-Catalog-020226"
-          ]
+          "datasets": ["danielrosehill/Ivory-Catalog-020226"]
         }
       ]
     },
@@ -544,40 +336,23 @@
           "title": "Geopol Forecaster",
           "summary": "Structured predictions from multi-agent wargaming runs, with accuracy tracking.",
           "status": "ongoing",
-          "datasets": [
-            "danielrosehill/Geopol-Forecaster-Predictions"
-          ],
-          "spaces": [
-            "danielrosehill/Geopolitical-Predictions",
-            "danielrosehill/Geopol-Forecast-Iran-Israel"
-          ],
-          "repos": [
-            "danielrosehill/Geopol-Forecaster",
-            "danielrosehill/Geopol-Forecasts-Index"
-          ]
+          "datasets": ["danielrosehill/Geopol-Forecaster-Predictions"],
+          "spaces": ["danielrosehill/Geopolitical-Predictions", "danielrosehill/Geopol-Forecast-Iran-Israel"],
+          "repos": ["danielrosehill/Geopol-Forecaster", "danielrosehill/Geopol-Forecasts-Index"]
         },
         {
           "title": "Iran-Israel war 2026 OSINT",
           "summary": "Iranian missile and drone attack waves against Israel and US/coalition targets.",
           "status": "released",
-          "datasets": [
-            "danielrosehill/Iran-Israel-War-2026"
-          ],
-          "repos": [
-            "danielrosehill/Iran-Israel-War-2026-OSINT-Data"
-          ]
+          "datasets": ["danielrosehill/Iran-Israel-War-2026"],
+          "repos": ["danielrosehill/Iran-Israel-War-2026-OSINT-Data"]
         },
         {
           "title": "Analyst agents",
           "summary": "A multi-agent UN simulation, satellite-imagery analysis, and geopolitical system prompts.",
           "status": "live",
-          "datasets": [
-            "danielrosehill/Geopolitical-System-Prompts"
-          ],
-          "spaces": [
-            "danielrosehill/Agent-UN",
-            "danielrosehill/SATINT-Analyst"
-          ]
+          "datasets": ["danielrosehill/Geopolitical-System-Prompts"],
+          "spaces": ["danielrosehill/Agent-UN", "danielrosehill/SATINT-Analyst"]
         }
       ]
     },
@@ -590,41 +365,23 @@
           "title": "Global Value Factor Database (IFVI)",
           "summary": "A refactor of IFVI's value factors, with explorers. V1 is deprecated in favour of V2.",
           "status": "released",
-          "datasets": [
-            "danielrosehill/Global-Value-Factor-Database-Refactor-V2",
-            "danielrosehill/ifvi_valuefactors_deriv"
-          ],
-          "spaces": [
-            "danielrosehill/GVFD-Navigator",
-            "danielrosehill/GVFD-Explorer"
-          ],
-          "repos": [
-            "danielrosehill/GVFD-Explorer-Chatbot-V2"
-          ]
+          "datasets": ["danielrosehill/Global-Value-Factor-Database-Refactor-V2", "danielrosehill/ifvi_valuefactors_deriv"],
+          "spaces": ["danielrosehill/GVFD-Navigator", "danielrosehill/GVFD-Explorer"],
+          "repos": ["danielrosehill/GVFD-Explorer-Chatbot-V2"]
         },
         {
           "title": "Monetised GHG emissions",
           "summary": "An emissions data pipeline, with calculators that weigh monetised emissions against profitability.",
           "status": "released",
-          "datasets": [
-            "danielrosehill/GHG-Emissions-Data"
-          ],
-          "spaces": [
-            "danielrosehill/Monetised-GHG-Emissions-Calculator",
-            "danielrosehill/ghg-emissions-viz"
-          ],
-          "repos": [
-            "danielrosehill/GHG-Emissions-Data-Pipeline",
-            "danielrosehill/Monetised-GHG-Emissions"
-          ]
+          "datasets": ["danielrosehill/GHG-Emissions-Data"],
+          "spaces": ["danielrosehill/Monetised-GHG-Emissions-Calculator", "danielrosehill/ghg-emissions-viz"],
+          "repos": ["danielrosehill/GHG-Emissions-Data-Pipeline", "danielrosehill/Monetised-GHG-Emissions"]
         },
         {
           "title": "Pay-for-outcomes instruments",
           "summary": "Standardized social impact bond data based on Government Outcomes Lab.",
           "status": "released",
-          "datasets": [
-            "danielrosehill/pay-for-outcomes-instruments"
-          ]
+          "datasets": ["danielrosehill/pay-for-outcomes-instruments"]
         }
       ]
     },
@@ -647,63 +404,29 @@
             "danielrosehill/Career-Related-System-Prompts",
             "danielrosehill/Writing-System-Prompts"
           ],
-          "spaces": [
-            "danielrosehill/System-Prompt-Factory",
-            "danielrosehill/System-Prompt-Depersonaliser",
-            "danielrosehill/System-Prompt-Reformatter",
-            "danielrosehill/Assistant-Config-Library",
-            "danielrosehill/AI-Assistants-Library"
-          ],
-          "repos": [
-            "danielrosehill/System-Prompt-Library",
-            "danielrosehill/System-Prompt-Factory",
-            "danielrosehill/Email-Management-System-Prompts",
-            "danielrosehill/Writing-System-Prompts"
-          ]
+          "spaces": ["danielrosehill/System-Prompt-Factory", "danielrosehill/System-Prompt-Depersonaliser", "danielrosehill/System-Prompt-Reformatter", "danielrosehill/Assistant-Config-Library", "danielrosehill/AI-Assistants-Library"],
+          "repos": ["danielrosehill/System-Prompt-Library", "danielrosehill/System-Prompt-Factory", "danielrosehill/Email-Management-System-Prompts", "danielrosehill/Writing-System-Prompts"]
         },
         {
           "title": "Agent networks",
           "summary": "A code-generation agent network and a support-agent network.",
           "status": "released",
-          "datasets": [
-            "danielrosehill/Code-Gen-Agents-0925",
-            "danielrosehill/Narcissistic-Abuse-Support-Configs"
-          ],
-          "spaces": [
-            "danielrosehill/Code-Gen-Agents-Network",
-            "danielrosehill/Code-Gen-Agent-Prompt-Assistant",
-            "danielrosehill/Claude-Agent-Picker-Idea"
-          ]
+          "datasets": ["danielrosehill/Code-Gen-Agents-0925", "danielrosehill/Narcissistic-Abuse-Support-Configs"],
+          "spaces": ["danielrosehill/Code-Gen-Agents-Network", "danielrosehill/Code-Gen-Agent-Prompt-Assistant", "danielrosehill/Claude-Agent-Picker-Idea"]
         },
         {
           "title": "Claude Code slash commands",
           "summary": "Browsers for my Claude Code slash commands, general and Linux-desktop.",
           "status": "live",
-          "spaces": [
-            "danielrosehill/Claude-Code-Slash-Commands",
-            "danielrosehill/Claude-Code-Slash-Commands-Linux-Desktop"
-          ],
-          "blogs": [
-            {
-              "title": "A Voluntary Code Of Practice For Responsible Agent Skill Development",
-              "url": "https://huggingface.co/blog/danielrosehill/responsible-agent-skill-dev"
-            }
-          ]
+          "spaces": ["danielrosehill/Claude-Code-Slash-Commands", "danielrosehill/Claude-Code-Slash-Commands-Linux-Desktop"],
+          "blogs": [{"title": "A Voluntary Code Of Practice For Responsible Agent Skill Development", "url": "https://huggingface.co/blog/danielrosehill/responsible-agent-skill-dev"}]
         },
         {
           "title": "Text style transformers",
           "summary": "Shakespearean rewrites, human-to-AI style conversion, a pen-pal interface and prompt-to-podcast scripts.",
           "status": "live",
-          "datasets": [
-            "danielrosehill/Shakespearean-Text-Transformation-Prompts"
-          ],
-          "spaces": [
-            "danielrosehill/Shakespeare-AI",
-            "danielrosehill/Human-To-AI-Text-Converter",
-            "danielrosehill/Penpal-AI-Interface",
-            "danielrosehill/Prompt-To-Podcast-Script",
-            "danielrosehill/EQ-Template-Generator"
-          ]
+          "datasets": ["danielrosehill/Shakespearean-Text-Transformation-Prompts"],
+          "spaces": ["danielrosehill/Shakespeare-AI", "danielrosehill/Human-To-AI-Text-Converter", "danielrosehill/Penpal-AI-Interface", "danielrosehill/Prompt-To-Podcast-Script", "danielrosehill/EQ-Template-Generator"]
         }
       ]
     },
@@ -716,61 +439,36 @@
           "title": "Output length and prompt structure",
           "summary": "Maximum single-output length for code generation, whether prompt structure matters, and whether one prompt can produce a book.",
           "status": "complete",
-          "datasets": [
-            "danielrosehill/Long-Prompt-Experiment",
-            "danielrosehill/Single-Prompt-Book",
-            "danielrosehill/ChatGPT-AI-Vs-API"
-          ],
-          "spaces": [
-            "danielrosehill/llm-long-codegen-experiment",
-            "danielrosehill/Max-Output-Tokens-Analysis-0225",
-            "danielrosehill/Single-Shot-Brevity-Training"
-          ]
+          "datasets": ["danielrosehill/Long-Prompt-Experiment", "danielrosehill/Single-Prompt-Book", "danielrosehill/ChatGPT-AI-Vs-API"],
+          "spaces": ["danielrosehill/llm-long-codegen-experiment", "danielrosehill/Max-Output-Tokens-Analysis-0225", "danielrosehill/Single-Shot-Brevity-Training"]
         },
         {
           "title": "LLM API pricing",
           "summary": "Point-in-time OpenRouter pricing, and 218 tool-calling LLMs compared on cost and context.",
           "status": "snapshot",
-          "datasets": [
-            "danielrosehill/Open-Router-API-Pricing-Analysis"
-          ],
-          "spaces": [
-            "danielrosehill/Agentic-LLM-Price-Comparisons"
-          ]
+          "datasets": ["danielrosehill/Open-Router-API-Pricing-Analysis"],
+          "spaces": ["danielrosehill/Agentic-LLM-Price-Comparisons"]
         },
         {
           "title": "Multimodal AI taxonomy",
           "summary": "A structured map of multimodal model capabilities by input and output modality.",
           "status": "released",
-          "datasets": [
-            "danielrosehill/multimodal-ai-taxonomy"
-          ],
-          "spaces": [
-            "danielrosehill/Multimodal-AI-Taxonomy",
-            "danielrosehill/The-Agentic-Symphony"
-          ],
-          "repos": [
-            "danielrosehill/Multimodal-AI-Taxonomy"
-          ]
+          "datasets": ["danielrosehill/multimodal-ai-taxonomy"],
+          "spaces": ["danielrosehill/Multimodal-AI-Taxonomy", "danielrosehill/The-Agentic-Symphony"],
+          "repos": ["danielrosehill/Multimodal-AI-Taxonomy"]
         },
         {
           "title": "My Weird Prompts podcast corpus",
           "summary": "AI-generated podcast episodes and a navigator for the corpus.",
           "status": "growing",
-          "datasets": [
-            "danielrosehill/ai-generated-podcast-episodes"
-          ],
-          "spaces": [
-            "danielrosehill/mwp-dataset-navigator"
-          ]
+          "datasets": ["danielrosehill/ai-generated-podcast-episodes"],
+          "spaces": ["danielrosehill/mwp-dataset-navigator"]
         },
         {
           "title": "Writing-style corpus",
           "summary": "My old blog posts, used to fine-tune a writing-style generator.",
           "status": "released",
-          "datasets": [
-            "danielrosehill/Blog-Posts"
-          ]
+          "datasets": ["danielrosehill/Blog-Posts"]
         }
       ]
     },
@@ -783,43 +481,28 @@
           "title": "HomeGoods Taxonomy",
           "summary": "A hierarchical classification of household and small-business physical goods, with handling attributes.",
           "status": "released",
-          "datasets": [
-            "danielrosehill/homegoods-taxonomy"
-          ],
-          "repos": [
-            "danielrosehill/HomeGoods-Taxonomy"
-          ]
+          "datasets": ["danielrosehill/homegoods-taxonomy"],
+          "repos": ["danielrosehill/HomeGoods-Taxonomy"]
         },
         {
           "title": "Storage container dimensions",
           "summary": "Planning-grade volumes for European and North American warehouse plastic containers.",
           "status": "released",
-          "datasets": [
-            "danielrosehill/storage-container-dimensions"
-          ],
-          "repos": [
-            "danielrosehill/Eurobox_Poster"
-          ]
+          "datasets": ["danielrosehill/storage-container-dimensions"],
+          "repos": ["danielrosehill/Eurobox_Poster"]
         },
         {
           "title": "ISO 3166 / ISO 4217 consolidated",
           "summary": "A country-to-currency lookup table.",
           "status": "released",
-          "datasets": [
-            "danielrosehill/ISO-3166-4217-Consolidated"
-          ],
-          "repos": [
-            "danielrosehill/ISO3166-4217-Consolidated"
-          ]
+          "datasets": ["danielrosehill/ISO-3166-4217-Consolidated"],
+          "repos": ["danielrosehill/ISO3166-4217-Consolidated"]
         },
         {
           "title": "Point-in-time catalogues",
           "summary": "Zapier's integrations list (August 2025) and my GitHub repos (August 2025).",
           "status": "snapshot",
-          "datasets": [
-            "danielrosehill/Zapier-Integrations-260825",
-            "danielrosehill/github-repos-100825"
-          ]
+          "datasets": ["danielrosehill/Zapier-Integrations-260825", "danielrosehill/github-repos-100825"]
         }
       ]
     },
@@ -832,18 +515,13 @@
           "title": "Lisdexamfetamine split-dose modeller",
           "summary": "Models split-dose Vyvanse protocols.",
           "status": "live",
-          "spaces": [
-            "danielrosehill/Lisdexamfetamine-Split-Dose-Modeller"
-          ]
+          "spaces": ["danielrosehill/Lisdexamfetamine-Split-Dose-Modeller"]
         },
         {
           "title": "Project showcases",
           "summary": "Gemini vibe-coded proofs of concept, and an older navigable index of AI projects.",
           "status": "live",
-          "spaces": [
-            "danielrosehill/Gemini-Vibe-Coded-POCs",
-            "danielrosehill/AI-Project-Index"
-          ]
+          "spaces": ["danielrosehill/Gemini-Vibe-Coded-POCs", "danielrosehill/AI-Project-Index"]
         }
       ]
     }
