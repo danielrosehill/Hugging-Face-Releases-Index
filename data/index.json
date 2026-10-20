@@ -285,8 +285,10 @@
         },
         {
           "title": "ASR paragraph breaks",
-          "summary": "Hand-annotated paragraph breaks for flat ASR monologue (pool of 959 items), annotated in a Gradio Space, for a small text-in/text-out paragraphing model.",
-          "status": "in-progress",
+          "summary": "Gemma 3 270M fine-tune that adds paragraph breaks to flat ASR text without changing it (F1 0.78 on hand-reviewed held-out memos), with an ONNX export for on-device use after Parakeet; synthetic Haiku-written memos, hand-reviewed or labelled by rules derived from the reviews.",
+          "status": "released",
+          "base_model": "google/gemma-3-270m-it",
+          "models": ["danielrosehill/Gemma-3-270M-ASR-Paragraph-Breaks", "danielrosehill/Gemma-3-270M-ASR-Paragraph-Breaks-ONNX"],
           "datasets": ["danielrosehill/ASR-Paragraph-Breaks"],
           "spaces": ["danielrosehill/ASR-Paragraph-Annotator"],
           "repos": ["danielrosehill/ASR-Paragraph-Breaks"]
